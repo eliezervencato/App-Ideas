@@ -18,17 +18,16 @@ botao.addEventListener('click', () => {
 })
 
 function criptografar(texto, deslocamento){
-    let textoMaisculo = texto.toUpperCase().split("");
-    // console.log(textoMaisculo)
+    let textoMaiusculo = texto.toUpperCase().split("");
     let textoCripto = []
     
     
-    for(let i = 0; i < textoMaisculo.length; i++){
-        let indiceDaLetra = alfabeto.indexOf(textoMaisculo[i])
+    for(let i = 0; i < textoMaiusculo.length; i++){
+        let indiceDaLetra = alfabeto.indexOf(textoMaiusculo[i])
         if(indiceDaLetra >= 0){
             textoCripto.push(letraPorIndice(indiceDaLetra + deslocamento))
         } else {
-            textoCripto.push(textoMaisculo[i])
+            textoCripto.push(textoMaiusculo[i])
         }
     }
 
