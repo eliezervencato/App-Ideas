@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --font-size: 1.1rem;
+  --font-color: white;
+  --border-radius: 5px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--font-color);
+  font-size: var(--font-size);
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header img {
+  height: 180px;
+  border-radius: 50%;
+}
+
+.header h1 {
+  font-weight: 900;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.campo{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.entrada {
+    background-color: #0005;
+    border: solid 1px #0009;
+    border-radius: var(--border-radius);
+    outline: none;
+    /* font-size: var(--font-size); */
+    color: var(--font-color);
+    padding: 5px 10px;
+}
+
+.botao {
+    background-color: #fff2;
+    padding: 10px 30px;
+    border-radius: 200px;
+    border: none;
+    color: var(--font-color);
+    cursor: pointer;
+    font-size: var(--font-size);
+}
+
+#texto-criptografado {
+    background-color: #0005;
+    border: solid 1px #0009;
+    border-radius: var(--border-radius);
+    outline: none;
+    font-size: var(--font-size);
+    color: var(--font-color);
+    padding: 10px 10px;
+    width: 300px;
+    text-align: center;
+}

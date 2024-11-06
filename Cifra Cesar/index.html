@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cifra de César</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="assets/cifra-cesar.png" alt="Imagem da cifra de César" />
+        <h1 class="destaque">Criptografe a sua mensagem:</h1>
+      </div>
+
+      <div class="content">
+        <div class="campo">
+          <label for="input-mensagem">Digite a sua mensagem:</label>
+          <input type="text" class="entrada" id="input-mensagem" />
+        </div>
+
+        <div class="campo">
+          <label for="seletor-alfabeto">Mudar o início do alfabeto para: </label>
+          <select class="entrada" id="seletor-alfabeto"></select>
+        </div>
+
+        <button class="botao" id="botao">Criptografar</button>
+
+        <p id="texto-criptografado"></p>
+      </div>
+    </div>
+  </body>
+</html>
